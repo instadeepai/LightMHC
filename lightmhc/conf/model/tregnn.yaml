@@ -1,0 +1,4 @@
+defaults:
+  - shared
+
+model_name: TrEGNN

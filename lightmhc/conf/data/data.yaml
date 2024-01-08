@@ -1,0 +1,12 @@
+# Type of data. Default 'pmhc'.
+data_type: pmhc
+# Length of each chain.
+chain_lengths:
+  A: 180
+  C: 13
+# Input path to CSV file with targets to predict.
+input_csv_path: "/home/antoine/Documents/lightmhc/examples/input_example.csv"
+# Output directory to save predictions after scoring.
+output_dir: "/home/antoine/Documents/lightmhc/examples/out2"
+# Max length of an edge in the graph.
+threshold: 8

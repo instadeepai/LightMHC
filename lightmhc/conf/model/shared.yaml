@@ -1,0 +1,31 @@
+# Inference parameters.
+# Whether to use GPU for GNN forward pass (if available).
+use_gpu: true
+# Size of data batches.
+batch_size: 16
+# Path to checkpoint file.
+checkpoint_path: ""
+# Number of cpus to run Rosetta mover.
+n_cpus: 8
+
+# Model parameters.
+# Embedding dimension.
+dim_emb: 128
+# Number of graph conv layers.
+num_conv: 2
+# Index of the coordinates to use. 0 = Ca, 1 = C, 2 = N, 3 = O, 4 = Cb
+coord_index: 0
+
+# Graph parameters.
+# Node type.
+node_emb_type: class
+# The number of edge classes. There is no need to set this argument if the default
+# settings for the data generation have been used, resulting in three edge classes
+# (0 = no edge, 1 = adjacent/covalent, 2 = non-adjacent).
+num_edge_classes: 6
+# Whether to create the distance matrix when fetching .pt files.
+compute_dist_matrix: false
+# Whether to use pos encodings. "learned" , "spectral" or empty.
+pos_encoding_type: learned
+# Number of classes.
+num_node_classes: 43

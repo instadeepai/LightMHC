@@ -1,0 +1,14 @@
+defaults:
+  - model: tregnn
+  - data: data
+  - _self_
+
+hydra:
+  output_subdir: null
+  # Hydra single-run working directory.
+  run:
+    dir: .
+  # Hydra multi-run working directories.
+  sweep:
+    dir: .
+    subdir: .
